@@ -1,0 +1,310 @@
+Criar 6 páginas, sendo uma obrigatoriamente a index.html (página inicial), utilizando todos os elementos explicados na aula de hoje (comentários, metadados, listas e layout).
+As páginas podem ser iguais as que foram mostradas como exemplo ou de qualquer outro assunto, desde que sejam aplicados todos os elementos conforme exibido na aula.
+Enviar os prints da tela do validator.w3c.org de cada página.
+NÃO USAR CSS.
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--idioma princinpal da pagina-->
+
+<head>
+    <!-- Metadados  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula comentários, metadados,listas e layout">
+    <meta name="keywords" content="HTML, Comentários,Listas ,Layout,elementos semanticos">
+    <meta name="author" content="Eliana">
+    <title>Aula 5 </title>
+</head>
+
+<body>
+    <header>
+        <img src="imagem/FATEC_ZONA_LESTE.png"
+            alt="imagem com a palavra fatec em cinza e a expressao Zona leste em vermelho">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="javascript:void(0);">Listas</a></li> <!--poderia colocar "#"-->              
+                    <ul>
+                    <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                    <li><a href="lista_nao_ordenada.html">Lista não ordenada</a></li>
+                    </ul>
+                </li>
+                <li><a href="layout.html">Layout</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Conteúdo principal da página-->
+        <h1>Aula 5 </h1>
+        <section>
+            <h2>Comentário, Metadados, Listas e layout</h2>
+            <p>Este pequeno site trata do conteúdo da aula de HTML da disciplina Desenvolvimento Web 1, do curso
+                superior de tecnologia em Desenvolvimento de Software Multiplataforma.</p>
+        </section>
+    </main>
+    <footer>
+        <!--Rodapé da pagina-->
+        <p>Desenvolvido por Eliana &copy; 2021</p>
+    </footer>
+
+</body>
+
+</html>
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+metadados:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula comentários, metadados,listas e layout">
+    <meta name="keywords" content="HTML, Comentários,Listas ,Layout,elementos semanticos">
+    <meta name="author" content="Eliana">
+    <title>Aula 5 </title>
+</head>
+
+<body>
+    <header>
+        <img src="imagem/FATEC_ZONA_LESTE.png"
+            alt="imagem com a palavra fatec em cinza e a expressao Zona leste em vermelho">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="javascript:void(0);">Listas</a></li>
+                <!--poderia coloar "#"-->
+                <ul>
+                    <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                    <li><a href="lista_nao_ordenada.html">Lista não ordenada</a></li>
+                </ul>
+                </li>
+                <li><a href="layout.html">Layout</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Conteúdo principal da página-->
+        <h1>Metadados</h1>
+        <p>Metadados sao dados externos à página que são usados pelos navegadores.. </p>
+        <img src="imagem/metadados.png" alt="imagem  com conteúdo explicativos sobre tags de Metadados HTML">
+     </main>
+            <footer>
+        <!--Rodapé da pagina-->
+        <p>Desenvolvido por Eliana &copy; 2021</p>
+        </footer>
+</body>
+
+</html>
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+lista ordenada
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula comentários, metadados,listas e layout">
+    <meta name="keywords" content="HTML, Comentários,Listas ,Layout,elementos semanticos">
+    <meta name="author" content="Eliana">
+    <title>Aula 5 </title>
+</head>
+
+<body>
+    <header>
+        <img src="imagem/FATEC_ZONA_LESTE.png"
+            alt="imagem com a palavra fatec em cinza e a expressao Zona leste em vermelho">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="javascript:void(0);">Listas</a></li>
+                <!--poderia coloar "#"-->
+                <ul>
+                    <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                    <li><a href="lista_nao_ordenada.html">Lista não ordenada</a></li>
+                </ul>
+                </li>
+                <li><a href="layout.html">Layout</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Conteúdo principal da página-->
+        <h1>Lista Ordenada</h1>
+        <p>Lista Ordenada começa com a tag tag&lt;OL&gt;. </p>
+        <img src="imagem/ol.png" alt="imagem  com conteúdo explicativos sobre lista ordenada em  HTML">
+    </main>
+    <footer>
+        <!--Rodapé da pagina-->
+        <p>Desenvolvido por Eliana &copy; 2021</p>
+    </footer>
+</body>
+
+</html>
+////////////////////////////////////////////////////////////////////////////////////
+lista nao ordenada
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula comentários, metadados,listas e layout">
+    <meta name="keywords" content="HTML, Comentários,Listas ,Layout,elementos semanticos">
+    <meta name="author" content="Eliana">
+    <title>Aula 5 </title>
+</head>
+
+<body>
+    <header>
+        <img src="imagem/FATEC_ZONA_LESTE.png"
+            alt="imagem com a palavra fatec em cinza e a expressao Zona leste em vermelho">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="javascript:void(0);">Listas</a></li>
+                <!--poderia coloar "#"-->
+                <ul>
+                    <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                    <li><a href="lista_nao_ordenada.html">Lista não ordenada</a></li>
+                </ul>
+                </li>
+                <li><a href="layout.html">Layout</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Conteúdo principal da página-->
+        <h1>Lista Não Ordenada</h1>
+        <p>lista não ordenada começa com a tag&lt;UL&gt; .</p>
+        <img src="imagem/ul.png" alt="imagem  com conteúdo explicativos sobre lista não  ordenada em  HTML">
+    </main>
+    <footer>
+        <!--Rodapé da pagina-->
+        <p>Desenvolvido por Eliana &copy; 2021</p>
+    </footer>
+</body>
+
+</html>
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+comentarios
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula comentários, metadados,listas e layout">
+    <meta name="keywords" content="HTML, Comentários,Listas ,Layout,elementos semanticos">
+    <meta name="author" content="Eliana">
+    <title>Aula 5 </title>
+</head>
+
+<body>
+    <header>
+        <img src="imagem/FATEC_ZONA_LESTE.png"
+            alt="imagem com a palavra fatec em cinza e a expressao Zona leste em vermelho">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="javascript:void(0);">Listas</a></li>
+                <!--poderia coloar "#"-->
+                <ul>
+                    <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                    <li><a href="lista_nao_ordenada.html">Lista não ordenada</a></li>
+                </ul>
+                </li>
+                <li><a href="layout.html">Layout</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Conteúdo principal da página-->
+        <h1>Comentários</h1>
+        <p>Comentário em HTML não no navegador são exibidos mas podem ajudar a documentar seu código-fonte HTML </p>
+        <img src="imagem/comentarios.png" alt="imagem  com conteúdo explicativos sobre tags de comentários HTML" </main>
+            <footer>
+        <!--Rodapé da pagina-->
+        <p>Desenvolvido por Eliana &copy; 2021</p>
+        </footer>
+</body>
+
+</html>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+layout
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula comentários, metadados,listas e layout">
+    <meta name="keywords" content="HTML, Comentários,Listas ,Layout,elementos semanticos">
+    <meta name="author" content="Eliana">
+    <title>Aula 5 </title>
+</head>
+
+<body>
+    <header>
+        <img src="imagem/FATEC_ZONA_LESTE.png"
+            alt="imagem com a palavra fatec em cinza e a expressao Zona leste em vermelho">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="javascript:void(0);">Listas</a></li>
+                <!--poderia colocar "#"-->
+                <ul>
+                    <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
+                    <li><a href="lista_nao_ordenada.html">Lista não ordenada</a></li>
+                </ul>
+                </li>
+                <li><a href="layout.html">Layout</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Conteúdo principal da página-->
+        <h1>Elementos de Layout</h1>
+        <p>&lt;HEADER&gt; Define um cabeçalho para um documento ou seção</p>
+        <p>&lt;NAV&gt; Define um conteiner para links de navegação</p>
+        <p>&lt;SECTION&gt; Define uma seção em um documento</p>
+        <p>&lt;ARTICLE&gt; Define um artigo independente</p>
+        <p>&lt;ASIDE&gt; Define o conteúdo além do conteúdo como uma barra lateral</p>
+        <p>&lt;FOOTER&gt; Define um rodapé para um documento ou seção </p>
+
+
+        <img src="imagem/layout.png" alt="imagem  com conteúdo explicativos sobre layout em  HTML">
+    </main>
+    <footer>
+        <!--Rodapé da pagina-->
+        <p>Desenvolvido por Eliana &copy; 2021</p>
+    </footer>
+</body>
+
+</html>
