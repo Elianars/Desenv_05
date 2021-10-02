@@ -3,48 +3,62 @@
     padding: 0;
 }
 
-body{
+body {
     font-size: 14px;
+    background: linear-gradient(90deg,  /* linear-gradient ou radial-gradient*/
+            rgba(2, 0, 36, 1) 0%,
+            rgb(117, 9, 121) 35%,
+            rgba(0, 212, 255, 1) 100%);
+            
 }
 
-#topo{
+
+#topo {
     width: 100%;
     height: auto;
     /* background-color: #dedede; */
 }
 
-#logo{
+#logo {
     width: 20%;
     height: auto;
 }
+
 /* Navegação */
-nav{
+nav {
     width: 100%;
     height: auto;
     background-color: red;
     float: left;
 }
-#menu{
+
+#menu {
     list-style: none;
     /* border: 1px solid #ffffff; */
     border: 1px solid #fff (0, 255, 21);
     float: left;
     padding-left: 4%;
 }
-#menu li{
-    position:relative; /*posição em relacao ele mesmo ou página */
+
+#menu li {
+    position: relative;
+    /*posição em relacao ele mesmo ou página */
     float: left;
-    border-right:1px solid #fff;
+    border-right: 1px solid #fff;
 }
-#menu li  a{
+
+#menu li a {
     font-family: Arial, Helvetica, sans-serif;
-    color:#fff;
-    text-decoration: none; /*tira o sublinhado*/
-    padding:5px 10px;  /*top e base /esquerada e direita */
+    color: #fff;
+    text-decoration: none;
+    /*tira o sublinhado*/
+    padding: 5px 10px;
+    /*top e base /esquerada e direita */
     display: block;
 }
 
-#menu li a:houver{   /* pseudo classe, efeitos*/
+#menu li a:hover {
+    /* pseudo classe, efeitos*/
     background-color: #470404;
     transition: 1s;
 }
@@ -53,21 +67,24 @@ nav{
 /* submenu*/
 #menu li ul {
     position: absolute;
-    top:25px;
-    left:0;
+    top: 25px;
+    left: 0;
     background-color: #b00000;
     display: none;
 }
-#menu li:houver ul, #menu li over  ul{
-    display:block;
+
+#menu li:hover ul{
+    display: block;
 }
-#menu li ul li{
+
+
+#menu li ul li {
     border: 1px solid #ffffff;
     display: block;
     width: 150px;
 }
 
-#conteudo{
+#conteudo {
     width: 100%;
     min-height: 600px;
     font-family: Arial, Helvetica, sans-serif;
@@ -76,21 +93,77 @@ nav{
     background-color: #fff;
 }
 
-#conteudo h1{
+#conteudo h1 {
     text-align: center;
 }
 
+section {
+    padding: 3%;
+}
 
-#imagem{
+#imagem {
     width: 40%;
     height: auto;
 }
 
 
 #rodape {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    color: #fff;
+    background-color: red;
+    padding-top: 1%;
     text-align: center;
-    padding-top: 20px;
-    background-color:red;
-    margin-top: 2%;
-    display: -ms-inline-flexbox;
+    width: 100%;
+    height: 60px;
+}
+
+input,select {
+    width: 40%;
+    height: 40px;
+    background-color: silver;
+    color: black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+label,legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 1.2em;
+
+}
+
+fieldset {
+    border-color: #500101;
+    border-radius: 15px;
+}
+
+textarea {
+    width: 40%;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+input[ type=submit] {
+    /* seletor de atributo []*/
+    width: 15%;
+    height: 40px;
+    /* background-color: #353434; */
+    background: linear-gradient(rgb(255, 0, 119), rgb(47, 0, 255));
+
+    color: white;
+}
+
+input[ type=reset] {
+    /* seletor de atributo []*/
+    width: 15%;
+    height: 40px;
+    /* background-color: #b00000; */
+    background: linear-gradient(rgb(255, 0, 119), rgb(47, 0, 255));
+    color: white;
+}
+.required:after{      /*after é uma pseudo classe*/
+    content: " * ";
+    color:red;
 }
