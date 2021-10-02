@@ -3,49 +3,94 @@
     padding: 0;
 }
 
-
-#principal {
-    font-family: sans-serif;
-    color: #380061;
-    margin-left: 7%;
-
+body{
+    font-size: 14px;
 }
 
-#esp {
-    font-weight: bold;
-    border: 2px solid black;
-    color: cornflowerblue;
-    font-family: 'Gluten', cursive;
-    margin-top: 2%;
-
+#topo{
+    width: 100%;
+    height: auto;
+    /* background-color: #dedede; */
 }
 
-#text {
-    opacity: 0.6;
-    border: 2px solid;
-    margin-top: 2%;
-    font-style: italic;
-    font-size: 6rem;
-   
-    
+#logo{
+    width: 20%;
+    height: auto;
+}
+/* Navegação */
+nav{
+    width: 100%;
+    height: auto;
+    background-color: red;
+    float: left;
+}
+#menu{
+    list-style: none;
+    /* border: 1px solid #ffffff; */
+    border: 1px solid #fff (0, 255, 21);
+    float: left;
+    padding-left: 4%;
+}
+#menu li{
+    position:relative; /*posição em relacao ele mesmo ou página */
+    float: left;
+    border-right:1px solid #fff;
+}
+#menu li  a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#fff;
+    text-decoration: none; /*tira o sublinhado*/
+    padding:5px 10px;  /*top e base /esquerada e direita */
+    display: block;
+}
+
+#menu li a:houver{   /* pseudo classe, efeitos*/
+    background-color: #470404;
+    transition: 1s;
 }
 
 
+/* submenu*/
+#menu li ul {
+    position: absolute;
+    top:25px;
+    left:0;
+    background-color: #b00000;
+    display: none;
+}
+#menu li:houver ul, #menu li over  ul{
+    display:block;
+}
+#menu li ul li{
+    border: 1px solid #ffffff;
+    display: block;
+    width: 150px;
+}
 
-#opac {
+#conteudo{
+    width: 100%;
+    min-height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    background-color: #fff;
+}
 
-    padding: 8px;
-    border-radius: 25p;
-    border-radius: 15px 50px;
-    margin-top: 2%;
+#conteudo h1{
+    text-align: center;
+}
 
+
+#imagem{
+    width: 40%;
+    height: auto;
 }
 
 
 #rodape {
     text-align: center;
-    padding-top: 10%;
-    background-color: darkcyan;
+    padding-top: 20px;
+    background-color:red;
     margin-top: 2%;
     display: -ms-inline-flexbox;
 }
