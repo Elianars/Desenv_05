@@ -12,6 +12,40 @@ body {
             
 }
 
+#acessibilidade {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+}
+
+#atalhos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    list-style: none;
+    padding-left: 1%;
+}
+
+#atalhos li{
+    display: inline;
+
+}
+
+#atalhos li a{
+    color: black;
+}
+#atalhos li a:hover{
+    color: #3e3e3e;
+}
+
+#pgacess{
+    padding-left: 30%;
+}
+
+.contraste, .fonte{
+    padding-left: 3px;
+}
+
 
 #topo {
     width: 100%;
@@ -106,7 +140,10 @@ section {
     height: auto;
 }
 
-
+iframe{
+    width: 600px;
+    height: 400px;
+}
 #rodape {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;

@@ -17,6 +17,20 @@
 
 <body>
     <header>
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo[1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu[2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé[3]</a></li>
+           
+
+            <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de acessibilidade ">ACESSIBILIDADE</a></li>
+            <li class="contraste"><a href="javascrpit:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+            <li class="contraste"><a href="javascrpit:void(0);" id="sem contraste">SEM CONTRASTE</a></li>
+            <li class="fonte"><a href="javascrpit:void(0);" id="aumentar">A+</a></li>
+            <li class="fonte"><a href="javascrpit:void(0);" id="diminuir">A-</a></li>
+        </ul>
+        </div>
         <img id="logo" src="imagem/FATEC_ZONA_LESTE.png"
             alt="imagem com a palavra fatec em cinza e a expressao Zona leste em vermelho">
         <nav>
@@ -37,6 +51,16 @@
             </ul>
 
         </nav>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
     </header>
     <main id="conteudo">
         <!-- <main id="principal"> -->
@@ -44,6 +68,10 @@
         <h1 id="esp">Aula8</h1>
 
         <section>
+            <audio controls>
+                <source src="audio/contato.mp4" type="audio/mp3">
+                Este navegador não suporta o elemento audio ou o formato de arquivo utilizado.
+            </audio>
             <form name="contato" id="contato" method="POST">
                 <fieldset>
                     <legend>Dados pessoais </legend><br>
