@@ -9,8 +9,16 @@ body {
             rgba(2, 0, 36, 1) 0%,
             rgb(117, 9, 121) 35%,
             rgba(0, 212, 255, 1) 100%);
+            display:grid;
             
 }
+
+#topo {
+    width: 100%;
+    height: auto;
+    background-color: #dedede;
+}
+
 
 #acessibilidade {
     width: 100%;
@@ -39,19 +47,15 @@ body {
 }
 
 #pgacess{
-    padding-left: 30%;
+    padding-left: 50%;
+    
 }
 
 .contraste, .fonte{
-    padding-left: 3px;
+    padding-left: 5px;
 }
 
 
-#topo {
-    width: 100%;
-    height: auto;
-    /* background-color: #dedede; */
-}
 
 #logo {
     width: 20%;
@@ -72,10 +76,11 @@ nav {
     border: 1px solid #fff (0, 255, 21);
     float: left;
     padding-left: 4%;
+   
 }
 
 #menu li {
-    position: relative;
+    position: relative; /* em relação a ele mesmo (relative) o (absolute = e em relação ao elemento )*/
     /*posição em relacao ele mesmo ou página */
     float: left;
     border-right: 1px solid #fff;
@@ -117,7 +122,23 @@ nav {
     display: block;
     width: 150px;
 }
+/*menu responsivo seletor de atributo*/
+label [for="bt_menu"]{
+    display:none;
 
+}
+#bt_menu{
+    display: none;
+
+}
+
+/* menu responsivo */
+label[for="bt_menu"]{
+    display: none;
+}
+#bt_menu{
+    display:none
+}
 #conteudo {
     width: 100%;
     min-height: 600px;
@@ -203,4 +224,97 @@ input[ type=reset] {
 .required:after{      /*after é uma pseudo classe*/
     content: " * ";
     color:red;
+}
+
+.breadcrumb{
+    padding-left: 2%;
+    list-style: none;
+}
+
+.breadcrumb li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    color: black;
+
+}
+
+.breadcrumb li a {
+    color: #3e3e3e;
+    text-decoration: none;
+}
+.breadcrumb li+li:before{
+    content: "/\00a0";
+    padding: 6px;
+    color: #000;
+}
+
+.breadcrumb li a:hover{
+    color:#000;
+    text-decoration: underline;
+}
+
+
+/*media querie menu responsivo*/
+
+@media screen and (max-width:630px){
+    #menu{
+        display: none;
+    }
+
+    label[for="bt_menu"]{
+        display:block;
+        
+    }
+
+     /*~ apartir de uma acão ele  vai executar outra coisa */
+    #bt_menu:checked ~ #menu{   
+        display:block;
+        border: none;
+    } 
+
+    #menu li{
+        position: relative;
+        float: left;
+        width: 100%;
+        border: none;
+    }
+    #menu li ul{
+        position: static;
+        width: 100%;
+        float:left;
+        border: none;
+    }
+    #menu li ul li{
+        position: relative;
+        width: 100%;
+        float: left;
+        display:block;
+        border: none;
+    }
+}
+/*media querie barra de acessibilidade*/
+@media screen and (max-width:1400px) {
+    
+
+#pgacess{
+    padding-left: 30%;
+    
+}
+
+.contraste, .fonte{
+    padding-left: 3px;
+    
+}
+}
+
+@media screen and (max-width:1280px) {
+    #pgacess{
+        padding-left: 20%;
+    }
+}
+@media screen and (max-width:1024px){
+    #pgacess{
+        padding-left: 15%;
+    }
 }
