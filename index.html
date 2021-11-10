@@ -19,11 +19,13 @@
     <header id="topo">
         <div id="acessibilidade">
             <ul id="atalhos">
-                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo[1]</a></li>
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo[1]</a>
+                </li>
                 <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu[2]</a></li>
                 <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé[3]</a></li>
-                
-                <li id="pgacess"><a href="acessibilidade.html"title="Ir para a página de acessibilidade ">ACESSIBILIDADE</a></li>
+
+                <li id="pgacess"><a href="acessibilidade.html"
+                        title="Ir para a página de acessibilidade ">ACESSIBILIDADE</a></li>
                 <li class="contraste"><a href="javascrpit:void(0);" id="contraste">CONTRASTE PRETO</a></li>
                 <li class="contraste"><a href="javascrpit:void(0);" id="sem contraste">SEM CONTRASTE</a></li>
                 <li class="fonte"><a href="javascrpit:void(0);" id="aumentar">A+</a></li>
@@ -33,7 +35,7 @@
         <img id="logo" src="imagem/FATEC_ZONA_LESTE.png"
             alt="imagem com a palavra fatec em cinza e a expressao Zona leste em vermelho">
         <nav>
-            <label for="bt_menu"><img src="imagem/botao_menu.png" alt="menu"></label>
+            <label for="bt_menu"><img src="imagem/botao-de-menu-de-tres-linhas-horizontais.xcf" alt="menu"></label>
             <input type="checkbox" id="bt_menu">
             <ul id="menu">
                 <li><a href="index.html">Início</a></li>
@@ -42,7 +44,7 @@
                 <li><a href="javascript:void(0);">Listas</a>
                     <!--poderia colocar "#"-->
 
-                    <ul>
+                    <ul id="menu">
                         <li><a href="lista_ordenada.html">Lista Ordenada</a></li>
                         <li><a href="lista_nao_ordenada.html">Lista não ordenada</a></li>
                         <li><a href="layout.html">Layout</a></li>
@@ -65,15 +67,16 @@
     <main id="conteudo">
         <!-- <main id="principal"> -->
         <!--Conteúdo principal da página-->
-        <h1 id="esp">Aula 08</h1>
+        <h1 id="esp">Aula 13</h1>
         <section>
-            <h2>Comentário, Metadados, Listas e layout</h2>
-            <p>Este pequeno site trata do conteúdo da aula de HTML da disciplina Desenvolvimento Web 1, do curso
-                superior de tecnologia em Desenvolvimento de Software Multiplataforma.</p>
             <audio controls>
                 <source src="audio/index.mp4" type="audio/mp3">
                 Este navegador não suporta o elemento audio ou o formato de arquivo utilizado.
             </audio>
+            <h2>Comentário, Metadados, Listas e layout</h2>
+            <p>Este pequeno site trata do conteúdo da aula de HTML da disciplina Desenvolvimento Web 1, do curso
+                superior de tecnologia em Desenvolvimento de Software Multiplataforma.</p>
+
             <iframe src="https://www.youtube.com/embed/jl7Ay0U2Jhw" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>

@@ -89,7 +89,7 @@ nav {
     position: relative; /* em relação a ele mesmo (relative) o (absolute = e em relação ao elemento )*/
     /*posição em relacao ele mesmo ou página */
     float: left;
-    border-right: 1px solid #fff;
+    /* border-right: 1px solid #fff; */
 }
 
 #menu li a {
@@ -131,6 +131,7 @@ nav {
 /*menu responsivo seletor de atributo*/
 label [for="bt_menu"]{
     display:none;
+    
 
 }
 #bt_menu{
@@ -195,6 +196,7 @@ label,legend {
     font-weight: bold;
     font-size: 1.2em;
     margin-left: 1.2em;
+    
 
 }
 
@@ -266,6 +268,7 @@ input[ type=reset] {
 @media screen and (max-width:630px){
     #menu{
         display: none;
+        
     }
 
     label[for="bt_menu"]{
@@ -330,10 +333,11 @@ input[ type=reset] {
         display:none;
     }
 
-    ul#atalhos li#pgacess{
+    ul#atalhos li#pgacess{/*nome do elemento e do identificador ul#atalhos*/
         display:inline-block;
     }
     ul#atalhos li.fonte{
         display:inline-block;
     }
 }
+/*midia querie de ajuste videos*/
